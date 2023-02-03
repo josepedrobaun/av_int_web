@@ -17,7 +17,7 @@ const btnNovoRecado = document.querySelector('#novo-recado')
 //LOAD DOM
 document.addEventListener('DOMContentLoaded', (()=>{
     if(!usuarioLogado){
-        location.assign('index.html')
+        location.assign('home.html')
         return
     } 
     console.log(usuarioLogado)
@@ -170,6 +170,6 @@ function limparDados(){
 //LOGOUT DO SISTEMA 
 function sairSistema(){
     localStorage.removeItem('usuarioLogado')
-    location.assign('login.html')
+    location.assign('index.html')
 }
 
